@@ -1,7 +1,7 @@
 -- Just checking for the database that is in my system Testing to see if I got access. 
 show databases;
 -- Lets create a new database.
- 
+
 Create database if not exists Historical_Figures;
 show databases;
 
@@ -25,9 +25,18 @@ Insert into tbl_Leacture(Leacture_Name,Age) values
 ("Bill Gates",76);
 
 select * from tbl_Leacture;
+create table if not exists tbl_Bookings_Room
+
+(Bookings_RoomID INT auto_increment,
+Booking_Room varchar(58),
+PRIMARY KEY (Bookings_RoomID)
+);
+Insert into tbl_Bookings_Room(Booking_Room) values
+("Leacture Room"),
+("Event Room");
 create table if not exists tbl_Bookings
 (BookingsID INT auto_increment,
-Booking_Room varchar (200),
+Bookings_RoomID INT,
 TicketsNeeded varchar(15),
 Booking_desc varchar(500),
 NumberOfPeople INT,
@@ -37,19 +46,22 @@ Date varchar(60),
 time varchar(180),
 EndTime varchar(180),
 PRIMARY KEY (BookingsID),
+foreign KEY (Bookings_RoomID) references tbl_Bookings_Room(Bookings_RoomID),
 foreign key(LeactureID) references tbl_Leacture(LeactureID)
 );
 -- There are only two rooms.
 --  Lecture room
 --  Event room
-Insert into tbl_Bookings(Booking_Room,TicketsNeeded,Booking_desc,Price,NumberOfPeople,Date,time,EndTime,LeactureID) values
-("Leacture Room","Yes","How great was Rosalind Franklin?",12,62,"4/02/2024","4.00pm","7.00pm",1),
-("Event Room","No","Who is Augusta Ada King?",0,62,"7/02/2024","4.00pm","5.00pm",2),
-("Leacture Room","Yes","Who is Mary Cartwright?",43,12,"3/03/2024","5.00pm", "7:00pm",3)
+Insert into tbl_Bookings(Bookings_RoomID,TicketsNeeded,Booking_desc,Price,NumberOfPeople,Date,time,EndTime,LeactureID) values
+(1,"Yes","How great was Rosalind Franklin?",12,62,"4/02/2024","4.00pm","7.00pm",1),
+(2,"No","Who is Augusta Ada King?",0,62,"7/02/2024","4.00pm","5.00pm",2),
+(1,"Yes","Who is Mary Cartwright?",43,12,"3/03/2024","5.00pm", "7:00pm",3)
 -- ("Bill Gates",76)
 ;
 select * from tbl_Bookings;
 show tables;
+
+
 create table if not exists tbl_Historical_People 
 (PersonID INT auto_increment,
 Name Varchar(500),
@@ -287,6 +299,10 @@ Maria reported her work to the Royal Swedish Academy of Sciences(KVA) and applie
  ,"Mathmatics","Iran",null)
 ;
 select * from tbl_Historical_People;
+show tables;
+select * From tbl_Bookings_Room;
+select * from tbl_Bookings;
+
 
 
 
