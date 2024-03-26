@@ -1,6 +1,7 @@
 -- Just checking for the database that is in my system Testing to see if I got access. 
 show databases;
 -- Lets create a new database.
+drop database if exists  Historical_Figures;
 
 Create database if not exists Historical_Figures;
 show databases;
