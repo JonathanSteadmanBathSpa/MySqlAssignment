@@ -92,8 +92,9 @@ SELECT * FROM tbl_Main_Sector;
 
 
 insert into tbl_Country_Of_Birth(Country_Name) values
-("Russia"),("Britain"),("Iran"),("France"),("USA"),("Egypt"),("Germany"),("Italy"),("Japan"),("Poland"),
-("Sweden"),("Serbia");
+("Russia"),("Britain"),("Iran"),("France"),("USA"),("Egypt"),("Germany"),("Italy"),
+("Japan"),("Poland"),
+("Sweden"),("Serbia"),("Kazakhstan");
 select * from tbl_Country_Of_Birth;
 
 insert into tbl_Historical_People(Name, BirthYear,DeathYear,Description,Country_Of_BirthID,BookingsID) Values
@@ -351,6 +352,45 @@ SELECT
     *
 FROM
     tbl_The_Person_Subjects;
+select * from tbl_Main_Sector;
+select * from tbl_Historical_People where DeathYear=null;  
+
+Insert into tbl_Historical_People(Name,BirthYear,DeathYear,Country_Of_BirthID,Description, BookingsID) 
+
+values("Askar Dzhumadildayev",1956,NULL,13," 
+
+Dzhumadildayev is a Kazakh mathematician, doctor of physics and mathematics,  
+
+professor, Full Member of the Kazakhstan National Academy of Science. He was also  
+
+member Supreme Council of Kazakh SSR and Republic ofKazakhstan.  
+
+In 2016, Askar Dzhumadilyavev was chosen as one of the nominees  
+
+in the Science category of the national project El Tulgasy (Name of the Motherland)  
+
+The idea of the project was to select the most significant citizens of Kazakhstan whose 
+
+names are now associated with the achievements of the country. More than 350,000 people 
+
+voted in this project, and Dzhumadilyavev was voted into second place in his category.  
+
+",null); 
+insert into tbl_The_Person_Subjects(PersonID,MainSectorID) values
+(27,1),(27,4);
+
+select * from tbl_Historical_People; 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
