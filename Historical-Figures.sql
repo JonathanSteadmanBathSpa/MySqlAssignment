@@ -164,7 +164,7 @@ Mathematical Association, and to be President of the London Mathematical Society
  the Noble Prize in Chemistry for the discovery of 
  artificial radioactivity.Alongside her husband, she identified the positron and neutron, 
  discovered an the accurate weight of the neutron, and pioneered the work into nuclear fission. 
- She worked on France's first nuclear reactor.","Irène Joliot-Curie",4,Null),
+ She worked on France's first nuclear reactor.","Chemistry, Physics",4,Null),
  
  ("Yvonne Choquet-Bruhat",1923,null,"Yvonne Choquet-Bruhat was a French mathematician and 
  physicist. She worked 
