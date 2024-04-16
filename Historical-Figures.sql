@@ -370,22 +370,13 @@ select * from tbl_Historical_People where DeathYear=null;
 -- I am adding in new person for the assignment sql question. 
 Insert into tbl_Historical_People(Name,BirthYear,DeathYear,Country_Of_BirthID,Description) 
 
-values("Askar Dzhumadildayev",1956,NULL,13," 
-
-Dzhumadildayev is a Kazakh mathematician, doctor of physics and mathematics,  
-
+values("Askar Dzhumadildayev",1956,NULL,13,"Dzhumadildayev is a Kazakh mathematician, doctor of physics and mathematics,  
 professor, Full Member of the Kazakhstan National Academy of Science. He was also  
-
 member Supreme Council of Kazakh SSR and Republic ofKazakhstan.  
-
 In 2016, Askar Dzhumadilyavev was chosen as one of the nominees  
-
 in the Science category of the national project El Tulgasy (Name of the Motherland)  
-
 The idea of the project was to select the most significant citizens of Kazakhstan whose 
-
 names are now associated with the achievements of the country. More than 350,000 people 
-
 voted in this project, and Dzhumadilyavev was voted into second place in his category.  
 
 "); 
@@ -394,16 +385,7 @@ insert into tbl_The_Person_Subjects(PersonID,MainSectorID) values
 
 select * from tbl_Historical_People; 
 select * from tbl_Bookings_For_Person;
-
-
-
-
-
-
-
-
-
-
+select * from tbl_Bookings_Room;
 
 
 
