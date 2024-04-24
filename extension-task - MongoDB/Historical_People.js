@@ -1,7 +1,7 @@
-db.createCollection("Historical_People")
-db.Historical_People.insertMany(
+db.createCollection{"Historical_People"}
+db.Historical_People.insertMany{
     [
-        {PersonID: 1, Name: "Augusta Ada King (Lovelace)", 
+        {PersonID: 1, Name: "Augusta Ada King {Lovelace}", 
         BirthYear: 1815, DeathYear: 1852, 
         Desc:"Countess of Lovelace, was a British mathematician and computer scientist accredited with the first published computer algorithm. She also suggested that it would be possible for Computers to do more than simple calculations,perhaps even write music.",
         CountryID:2},
@@ -11,7 +11,7 @@ db.Historical_People.insertMany(
         CountryID:2},
         {PersonID: 3, Name: "Rosalind Franklin",
         BirthYear:1920,DeathYear:1958,
-        Desc: "Rosalind Franklin graduated from the University of Cambridge in 1492, with a degree in Natural Sciences. In 1942she worked for The British Coal Utilisation Research Association (BCURA) where she discovered the link between the molecular structure of various types of coal and their physical properties, thus improving selection process for types of coal (i.e. for fuel and gas masks).She was later awarded a PhD from Cambridge for this work. Her work on coal included the refining of X-ray crystallography techniques that she later applied to DNA, identifying 2 types of DNA and noting the helix like structure of one of them in 1951, 2 years before Watson and Crick started work on their Double Helix Model."    
+        Desc: "Rosalind Franklin graduated from the University of Cambridge in 1492, with a degree in Natural Sciences. In 1942she worked for The British Coal Utilisation Research Association {BCURA} where she discovered the link between the molecular structure of various types of coal and their physical properties, thus improving selection process for types of coal {i.e. for fuel and gas masks}.She was later awarded a PhD from Cambridge for this work. Her work on coal included the refining of X-ray crystallography techniques that she later applied to DNA, identifying 2 types of DNA and noting the helix like structure of one of them in 1951, 2 years before Watson and Crick started work on their Double Helix Model."    
         ,CountryID: 2
     },
     {
@@ -19,7 +19,7 @@ db.Historical_People.insertMany(
         Name: "Hertha Ayrton",
         BirthYear: 1854,
         DeathYear: 1923,
-        Desc: "In 1899 Hertha Ayrton became the first woman to present her own paper in front of the Institution of Electrical Engineers (IEE) on the interaction of oxygen and carbon rods in arc lighting, shortly after becoming the first female member of the IEE. In 1901 the Royal Society refused to let her read her follow-up paper 'The Mechanism of the Electric Arc', instead being presented by John Perry. Similarly, in Cambridge she passed the Mathematical Tripos exam but was not allowed to be awarded a degree, as she was a woman.",
+        Desc: "In 1899 Hertha Ayrton became the first woman to present her own paper in front of the Institution of Electrical Engineers {IEE} on the interaction of oxygen and carbon rods in arc lighting, shortly after becoming the first female member of the IEE. In 1901 the Royal Society refused to let her read her follow-up paper 'The Mechanism of the Electric Arc', instead being presented by John Perry. Similarly, in Cambridge she passed the Mathematical Tripos exam but was not allowed to be awarded a degree, as she was a woman.",
         CountryID: 2
       },
       {
@@ -43,7 +43,7 @@ db.Historical_People.insertMany(
         Name: "Émilie du Châtelet",
         BirthYear: 1706,
         DeathYear: 1747,
-        Desc: "Known as much for her Philosophy as for her science, Émilie du Châtelet was one of the key figures in the French Enlightenment. Widely known for her translation into French of Isaac Newton's Principia (still used as the standard French translation and seen by many as the completion of the scientific revolution), her commentary on the work included notion of conservation of energy derived from the principles of mechanics Newton set forth. She advocated that energy was distinct from momentum and established the basis for Kinetic Energy.",
+        Desc: "Known as much for her Philosophy as for her science, Émilie du Châtelet was one of the key figures in the French Enlightenment. Widely known for her translation into French of Isaac Newton's Principia {still used as the standard French translation and seen by many as the completion of the scientific revolution}, her commentary on the work included notion of conservation of energy derived from the principles of mechanics Newton set forth. She advocated that energy was distinct from momentum and established the basis for Kinetic Energy.",
         CountryID: 4
       },
       {
@@ -82,7 +82,7 @@ db.Historical_People.insertMany(
         Name: "Ida Noddack",
         BirthYear: 1896,
         DeathYear: 1978,
-        Desc: "Nominated three times for a Nobel Prize in Chemistry (1933, 1935, and 1937) for the discovery of rhenium and masurium, Ida Noddack was a German physicist and chemist. Her work investigating and refuting Enrico Fermi's chemical proofs in 1934, instead stating that the breakdown of elements into non-neighbouring elements. While her work was dismissed at the time, work by Irène Joliot-Curie, Frédéric Joliot-Curie and Pavle Savic, and later by Otto Hahn and Fritz Strassmann, showed her hypothesis to be correct, leading to the discovery of nuclear fission.",
+        Desc: "Nominated three times for a Nobel Prize in Chemistry {1933, 1935, and 1937} for the discovery of rhenium and masurium, Ida Noddack was a German physicist and chemist. Her work investigating and refuting Enrico Fermi's chemical proofs in 1934, instead stating that the breakdown of elements into non-neighbouring elements. While her work was dismissed at the time, work by Irène Joliot-Curie, Frédéric Joliot-Curie and Pavle Savic, and later by Otto Hahn and Fritz Strassmann, showed her hypothesis to be correct, leading to the discovery of nuclear fission.",
         CountryID: 7
       },
       {
@@ -114,7 +114,7 @@ db.Historical_People.insertMany(
         Name: "Marie Sklodowska Curie",
         BirthYear: 1867,
         DeathYear: 1934,
-        Desc: "Marie Curie was the first woman to win a Nobel Prize (1903), and one of only four people to win two Nobel Prizes. Born in Poland, Marie moved to Paris for an undergraduate degree in physics, chemistry, and mathematics, later doing a PhD. Marie established the foundation for our current Theory of Radioactivity. She discovered two new elements (Radium and Polonium) and pioneered work into radiotherapy for cancer. She was overlooked by the Royal Swedish Academy of Sciences for the Nobel Prize in Physics, initially naming only her husband Pierre Curie and fellow physicist Henri Becquerel. Magnus Goesta Mittag-Leffler, a committee member, notified Pierre of Marie not being on the nomination paper. Pierre complained to the committee and had Marie added to the nomination papers.",
+        Desc: "Marie Curie was the first woman to win a Nobel Prize {1903}, and one of only four people to win two Nobel Prizes. Born in Poland, Marie moved to Paris for an undergraduate degree in physics, chemistry, and mathematics, later doing a PhD. Marie established the foundation for our current Theory of Radioactivity. She discovered two new elements {Radium and Polonium} and pioneered work into radiotherapy for cancer. She was overlooked by the Royal Swedish Academy of Sciences for the Nobel Prize in Physics, initially naming only her husband Pierre Curie and fellow physicist Henri Becquerel. Magnus Goesta Mittag-Leffler, a committee member, notified Pierre of Marie not being on the nomination paper. Pierre complained to the committee and had Marie added to the nomination papers.",
         CountryID: 10
       },
       {
@@ -130,7 +130,7 @@ db.Historical_People.insertMany(
         Name: "Sophia Brahe",
         BirthYear: 1559,
         DeathYear: 1643,
-        Desc: "Sophia Brahe, 1559 - 1643, was a Danish noble woman and horticulturalist with knowledge of astronomy, chemistry, and medicine. She assisted her brother Tycho Brahe with his astronomical observations. The work that Sophia aided her brother in is now seen as the basis of modern orbit predictions of the planets and solar system. Tycho and Sophia collected the most accurate measurements to date (prior to the telescope invention) of the positions of the planets with respect to time.",
+        Desc: "Sophia Brahe, 1559 - 1643, was a Danish noble woman and horticulturalist with knowledge of astronomy, chemistry, and medicine. She assisted her brother Tycho Brahe with his astronomical observations. The work that Sophia aided her brother in is now seen as the basis of modern orbit predictions of the planets and solar system. Tycho and Sophia collected the most accurate measurements to date {prior to the telescope invention} of the positions of the planets with respect to time.",
         CountryID: 11
       },
       {
@@ -152,5 +152,5 @@ db.Historical_People.insertMany(
     
       //It will be the same format for the other figures...
       // You can continue adding more historical figures in the same manner.
-    ]);
+    ]};
     

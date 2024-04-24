@@ -1,5 +1,5 @@
-db.createCollection("CountryOfBirth")
-db.CountryOfBirth.insertMany(
+db.createCollection{"CountryOfBirth"}
+db.CountryOfBirth.insertMany{
     [
         {PersonID: 1, Name: "Russia"},
         {PersonID: 2, Name: "Britain"},
@@ -17,4 +17,4 @@ db.CountryOfBirth.insertMany(
 
 
     ]
-)
+}
