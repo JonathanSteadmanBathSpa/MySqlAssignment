@@ -1,19 +1,19 @@
 db.createCollection("CountryOfBirth")
 db.CountryOfBirth.insertMany(
     [
-        {CountryID: 1, CountryName: "Russia"},
-        {CountryID: 2, CountryName: "Britain"},
-        {CountryID: 3, CountryName: "Iran"},
-        {CountryID: 4, CountryName: "France"},
-        {CountryID: 5, CountryName: "USA"},
-        {CountryID: 6, CountryName: "Egypt"},
-        {CountryID: 7, CountryName: "Germany"},
-        {CountryID: 8, CountryName: "Italy"},
-        {CountryID: 9, CountryName: "Japan"},
-        {CountryID: 10, CountryName: "Poland"},
-        {CountryID: 12, CountryName: "Sweden"},
-        {CountryID: 13, CountryName: "Serbia"},
-        {CountryID: 14, CountryName: "Kazakhstan"},
+        {PersonID: 1, Name: "Russia"},
+        {PersonID: 2, Name: "Britain"},
+        {PersonID: 3, Name: "Iran"},
+        {PersonID: 4, Name: "France"},
+        {PersonID: 5, Name: "USA"},
+        {PersonID: 6, Name: "Egypt"},
+        {PersonID: 7, Name: "Germany"},
+        {PersonID: 8, Name: "Italy"},
+        {PersonID: 9, Name: "Japan"},
+        {PersonID: 10, Name: "Poland"},
+        {PersonID: 12, Name: "Sweden"},
+        {PersonID: 13, Name: "Serbia"},
+        {PersonID: 14, Name: "Kazakhstan"},
 
 
     ]
